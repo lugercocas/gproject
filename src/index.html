@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <title>Gestión de Proyectos</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
   </head>
   <body>
     <nav class="menu"></nav>
+
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="collapse" href="#collapseArchivo" aria-expanded="false" aria-controls="collapseArchivo">
+          Archivo
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  data-bs-toggle="collapse" href="#collapseProyecto" aria-expanded="false" aria-controls="collapseProyecto">
+          Proyecto
+        </a>
+      </li>
+      <li class="nav-item"   data-bs-toggle="collapse" href="#collapseEditar" aria-expanded="false" aria-controls="collapseEditar">
+        <a class="nav-link" href="#">Editar</a>
+      </li>
+      <li class="nav-item"   data-bs-toggle="collapse" href="#collapseAyuda" aria-expanded="false" aria-controls="collapseAyuda">
+        <a class="nav-link">Ayuda</a>
+      </li>
+    </ul>
+
+    <div style="min-height: 120px;">
+      <div class="collapse" id="collapseArchivo">
+        <div class="card card-body" style="font-size: large;">
+          <i class="bi bi-plus-circle">Nuevo</i>
+          <i class="bi bi-folder2-open">Abrir</i>
+          <i class="bi bi-save">Guardar</i>
+          <i class="bi bi-x-square">Cerrar</i>          
+        </div>
+      </div>
+    </div>
+
+    <div style="min-height: 120px;">
+      <div class="collapse" id="collapseProyecto">
+        <div class="card card-body" style="font-size: large;">
+          <i class="bi bi-plus-circle">Nueva Tarea</i>
+          <i class="bi bi-folder2-open">Nueva Fase</i>
+          <i class="bi bi-save">Nueva Dependencia</i>        
+        </div>
+      </div>
+    </div>
+
+    <div style="min-height: 120px;">
+      <div class="collapse" id="collapseEditar">
+        <div class="card card-body" style="font-size: large;">
+          <i class="bi bi-plus-circle">Copiar</i>
+          <i class="bi bi-folder2-open">Pegar</i>
+          <i class="bi bi-save">Deshacer</i>        
+          <i class="bi bi-save">Rehacer</i>        
+        </div>
+      </div>
+    </div>
+
+    <div style="min-height: 120px;">
+      <div class="collapse" id="collapseAyuda">
+        <div class="card card-body" style="font-size: large;">
+          <i class="bi bi-plus-circle">Acerca de</i>       
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./menu.js"></script>
   </body>
 </html>

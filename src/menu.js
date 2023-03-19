@@ -1,5 +1,6 @@
 
 const customMenu = `
+
 <ul>
     <li><a href="#">Archivo</a>
         <ul>
@@ -30,6 +31,7 @@ const customMenu = `
         </ul>
     </li>
 </ul>
+
 `
 document.querySelector('.menu').insertAdjacentHTML('afterbegin', customMenu);
 
